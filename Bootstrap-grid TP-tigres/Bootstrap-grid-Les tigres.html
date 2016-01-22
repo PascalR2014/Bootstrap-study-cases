@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<title>Etude Bootstrap-les tigres</title>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		 <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+		  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+		<link href="tutos.css" rel="stylesheet">
+		<style type="text/css">
+      [class*="col"] { margin-bottom: 20px; }
+      img { width: 100%; }
+      body { margin-top: 10px; }
+    </style>
+  </head>
+   <body>
+   
+	<h1>Tutoriels <q>bootstrap-grid</q> agencement des images sur différents écrans, </br>la méthode des classes « col-*»</h1>
+
+    <div class="container">
+      <section class="row">
+        <div class="col-lg-2"><img src="images/t1.jpg" alt="Tigre"></div>
+        <div class="col-lg-2"><img src="images/t2.jpg" alt="Tigre"></div>
+        <div class="col-lg-2"><img src="images/t3.jpg" alt="Tigre"></div>
+        <div class="col-lg-2"><img src="images/t4.jpg" alt="Tigre"></div>
+        <div class="col-lg-2"><img src="images/t5.jpg" alt="Tigre"></div>
+        <div class="col-lg-2"><img src="images/t6.jpg" alt="Tigre"></div>
+        <div class="col-lg-2"><img src="images/t7.jpg" alt="Tigre"></div>
+        <div class="col-lg-2"><img src="images/t8.jpg" alt="Tigre"></div>
+        <div class="col-lg-2"><img src="images/t9.jpg" alt="Tigre"></div>
+        <div class="col-lg-2"><img src="images/t10.jpg" alt="Tigre"></div>
+        <div class="col-lg-2"><img src="images/t11.jpg" alt="Tigre"></div>
+        <div class="col-lg-2"><img src="images/t12.jpg" alt="Tigre"></div>
+      </section>
+    </div>
+		<!--Le rendu sur grand écran est parfait avec 6 photos sur la largeur, Mais
+		 en dessous de 1200 pixels les éléments s'empilent. Du coup je me retrouve avec une image sur la largeur, et comme je les ai prévues en basse résolution, elle pixellise-->
+		 
+	<p>	Les images, ci-dessus, sont configurées pour  <strong>écrans large au-dessus de 1200px</strong>, elles auront tendances à s'empiler en-dessous de 1200px et perdre en qualité visuelle, on parle de "pixellisation" !</p>
+		 
+		<!--L'idéal serait d'avoir : Sur moyen et grand écran : 6 images sur la largeur. Sur tablette : 4 images sur la largeur. Sur smartphone : 3 images sur la largeur.
+		Comment réaliser cela ? Tout simplement en combinant les classes col-* -->
+		
+	<div class="container">
+  <section class="row">
+    <div class="col-xs-4 col-sm-3 col-md-2"><img src="images/t1.jpg" alt="Tigre"></div>
+    <div class="col-xs-4 col-sm-3 col-md-2"><img src="images/t2.jpg" alt="Tigre"></div>
+    <div class="col-xs-4 col-sm-3 col-md-2"><img src="images/t3.jpg" alt="Tigre"></div>
+    <div class="col-xs-4 col-sm-3 col-md-2"><img src="images/t4.jpg" alt="Tigre"></div>
+    <div class="col-xs-4 col-sm-3 col-md-2"><img src="images/t5.jpg" alt="Tigre"></div>
+    <div class="col-xs-4 col-sm-3 col-md-2"><img src="images/t6.jpg" alt="Tigre"></div>
+    <div class="col-xs-4 col-sm-3 col-md-2"><img src="images/t7.jpg" alt="Tigre"></div>
+    <div class="col-xs-4 col-sm-3 col-md-2"><img src="images/t8.jpg" alt="Tigre"></div>
+    <div class="col-xs-4 col-sm-3 col-md-2"><img src="images/t9.jpg" alt="Tigre"></div>
+    <div class="col-xs-4 col-sm-3 col-md-2"><img src="images/t10.jpg" alt="Tigre"></div>
+    <div class="col-xs-4 col-sm-3 col-md-2"><img src="images/t11.jpg" alt="Tigre"></div>
+    <div class="col-xs-4 col-sm-3 col-md-2"><img src="images/t12.jpg" alt="Tigre"></div>
+  </section>
+</div>	
+
+	<p>	Les images, ci-dessus, sont configurées pour différents écrans, <strong>(xs, sm, md)</strong>, les images resteront à l'horizontale, pour toutes les résolutions d'écran, en-dessous de 1200px.</p>
+	
+	<footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://openclassrooms.com/courses/prenez-en-main-bootstrap/un-peu-de-pratique-15">courses-@openclassrooms.com</a> Contributor : <a href="https://github.com/PascalR2014">PascalR2014-@github.com</a>.</span>
+     </footer>
+
+	 
+	 
+	
+
+  </body>
+</html>
+
